@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: hr-web-app
   labels:
-    app: kodekloud/webapp-color
+    app: kodekloud-webapp-color
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: kodekloud/webapp-color
+      app: kodekloud-webapp-color
   template:
     metadata:
       labels:
-        app: kodekloud/webapp-color
+        app: kodekloud-webapp-color
     spec:
       containers:
-      - name: kodekloud/webapp-color
+      - name: kodekloud-webapp-color
         image: kodekloud/webapp-color
