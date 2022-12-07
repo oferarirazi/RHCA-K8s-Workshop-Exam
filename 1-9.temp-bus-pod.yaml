@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: temp-bus
+spec:
+  containers:
+  - name: redis-alpine
+    image: redis:alpine
