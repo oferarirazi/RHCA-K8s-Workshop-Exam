@@ -4,5 +4,5 @@ metadata:
   name: nginx-pod-ofer
 spec:
   containers:
-  - name: nginx:alpine
+  - name: nginx-alpine
     image: nginx:alpine
