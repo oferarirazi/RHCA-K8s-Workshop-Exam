@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: messaging
   labels:
-    tier=msg
+    tier: msg
 spec:
   containers:
   - name: redis-alpine
