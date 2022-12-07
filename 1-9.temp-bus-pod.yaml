@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: temp-bus
+  namespace: finance-ofer
 spec:
   containers:
   - name: redis-alpine
