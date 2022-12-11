@@ -1,1 +1,1 @@
-kubectl get nodes -o json
+kubectl get nodes -o json > /tmp/nodes-ofer
