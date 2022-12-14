@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-critical
+spec:
+  containers:
+  - name: nginx-critical
+    image: nginx
+
+# created in node1:/etc/kubernetes/manifests
