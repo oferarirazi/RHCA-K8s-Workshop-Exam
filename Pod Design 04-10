@@ -1,0 +1,7 @@
+kubectl get pods -l env=dev
+kubectl get pods -l env=dev --show-labels
+kubectl get pods -l env=prod
+kubectl get pods -l env=prod --show-labels
+kubectl get pods -l env
+kubectl get pods -l env=dev,env=prod
+kubectl get pods -l env=dev,env=prod --show-labels
