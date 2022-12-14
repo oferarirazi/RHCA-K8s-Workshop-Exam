@@ -1,0 +1,10 @@
+kubectl set image deployment/webapp nginx=nginx:1.17.4
+kubectl set image deployment/webapp nginx=nginx:1.17.1
+kubectl set image deployment/webapp nginx=nginx:1.100
+kubectl rollout history deploy webapp --revision=3
+kubectl rollout history deploy webapp --revision=5
+kubectl set image deployment/webapp nginx=nginx
+kubectl rollout history deploy webapp --revision=6
+kubectl autoscale deployment webapp --cpu-percent=85 --min=10 --max=20
+kubectl get rs
+kubectl delete deploy webapp ; kubectl delete hpa webapp
