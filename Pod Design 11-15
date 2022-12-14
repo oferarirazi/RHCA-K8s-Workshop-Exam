@@ -1,0 +1,5 @@
+kubectl label pods nginx-pod-i-0e7ed623bae2a4e30 env= ; kubectl label pods nginx-pod-i-0e7ed623bae2a4e30 env=uat
+kubectl label pods nginx-pod env=
+kubectl label pods nginx-pod app=nginx
+kubectl get nodes --show-labels
+kubectl label nodes worker-node nodeName=nginxnode

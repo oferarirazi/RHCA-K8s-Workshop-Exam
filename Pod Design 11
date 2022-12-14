@@ -1,1 +1,0 @@
-kubectl label pods nginx-pod env= ; kubectl label pods my-pod env=uat
