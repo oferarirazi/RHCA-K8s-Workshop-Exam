@@ -1,0 +1,5 @@
+kubectl scale --replicas=5 -f webapp.yaml
+kubectl rollout status deployment.apps/webapp
+kubectl get rs
+kubectl get deploy -o yaml > webapp-5.yaml
+kubectl delete deploy webapp
